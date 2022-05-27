@@ -1,0 +1,107 @@
+@import '../../styles.scss';
+.mat-slide-toggle{
+    font-size:1.8em;
+}
+.example-card {
+    text-align: center;
+    width: 400px;
+    color:$white;
+    border-radius: none;
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 2em;
+        font-weight: 100;
+    }
+    span{
+        color:rgb(41, 53, 68);
+    }
+  }
+    ::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+      background-color: $green!important;
+  }
+  ::ng-deep .mat-slide-toggle.mat-checked span.mat-slide-toggle-bar{
+    background-color: #4fbf74!important;
+  }
+  .mat-card {
+    background: $green;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    font-size: 4em;
+    mat-card-subtitle{
+       margin-top: 20px;
+       color:$white;
+    }
+}
+.atGlance{
+    .mat-card {
+        height: 55px;
+        font-size: 1.2em;
+    }
+    svg{
+        width:40px;
+    }
+}
+// .atGlanceMain{
+//     flex-wrap: wrap;
+// }
+.padding{
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+.white{
+    background-color: $white;
+    height:80px;
+}
+.mat-expansion-panel-header-title {
+     color:$green; 
+    text-align: center;
+    font-size: 2em;
+    box-shadow: inset;
+    height: 40px;
+}
+a{
+    color:$green;
+}
+.mat-accordion{
+  
+    box-shadow: 5px 10px #888888;
+   
+    .mat-expansion-panel{
+        margin-top:20px;
+    }
+   p{
+       font-size:1.2em;
+   }
+}
+
+
+// @media (min-width: 912px) and (max-width: 1368px) {
+//     mat-card {
+//         width:650px;
+//     }
+//     }
+//    @media  screen and (min-width: 949px) {
+//         mat-card {
+//             flex-wrap: wrap !important;
+//         }
+//         }
+//         @media  screen and (min-width: 853px) {
+//             mat-card {
+//                 width:700px !important;
+//             }
+//             }
+//             @media  screen and (min-width: 830px) {
+//                 mat-card { 
+//                     width:500px !important;
+//                 }
+//                 }
+//                 @media  screen and (min-width: 905px) {
+//                    .mat-slide-toggle-label{
+//                        margin-left:150px !important;
+//                     }
+//                 }
+  
+

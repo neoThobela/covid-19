@@ -1,0 +1,22 @@
+.searchInput{
+    margin:20px;
+}
+.chipDiv{
+    width:600px;
+    height:70px;
+    display:flex;
+    overflow-x: scroll;
+    overflow-y: hidden; 
+   margin: 20px 0 40px 0px;
+}
+
+.mat-standard-chip {
+    min-height: 41px;
+    font-size: 1.6em;
+}
+@media only screen and (max-width: 650px) {
+    .chipDiv{
+        width:300px;
+    }
+    }
+   

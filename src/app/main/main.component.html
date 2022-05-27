@@ -1,0 +1,54 @@
+<div
+  class="searchInput"
+  fxLayout="row"
+  fxLayoutAlign="center center"
+  fxLayout.xs="column"
+  fxLayout.sm="column"
+>
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Search for a country</mat-label>
+      <input
+        type="text"
+        placeholder="Search for a country"
+        aria-label="Number"
+        matInput
+        [formControl]="myControl"
+        [matAutocomplete]="auto"
+      />
+      <mat-autocomplete #auto="matAutocomplete"  [displayWith]="displayFn">
+        <mat-option
+          *ngFor="let option of filteredOptions | async"
+          [value]="option['country']"
+          (click)="displayData(option)"
+        >
+          {{ option.country }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+</div>
+<div
+  fxLayout="row"
+  fxLayoutAlign="center center"
+  fxLayout.xs="column"
+  fxLayout.gap="column"
+  fxLayout.sm="column"
+  class="example-chip"
+>
+  <mat-chip-list cdkDropList cdkDropListOrientation="horizontal">
+    <div class="chipDiv">
+      <!-- <div fxLayout="row" fxLayoutAlign="center center" > -->
+      <mat-chip
+        (click)="displayData(option)"
+        class="example-box"
+        cdkDrag
+        *ngFor="let option of countryData"
+      >
+        {{ option.country }}
+      </mat-chip>
+      <!-- </div> -->
+    </div>
+  </mat-chip-list>
+</div>
+<app-cases [item]="country"></app-cases>

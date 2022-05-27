@@ -1,0 +1,17 @@
+@import '../../styles.scss';
+
+.navbar-color{
+    background-color: $green;
+    color:$white;
+    padding-bottom:0px;
+    width:100%;
+    box-shadow: 5px 1px $green;   
+}
+span{
+    font-size: 2.3em;
+}
+li{
+    list-style-type: none;
+   margin-right: 10px;
+   font-size: 1.5em;
+}

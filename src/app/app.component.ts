@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+// import { MyServiceService } from './my-service.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'covid-19';
+ 
+//   countryData:any;
+//   countryActiveData:any;
+//   country:any={}; 
+ 
+//   constructor(private service:MyServiceService) { }
+
+
+//  getCountryDatafromService(){
+//   this.service.getCountryData().subscribe((data:any)=>{
+//   this.countryData=data;
+//     console.log("my",this.countryData);
+    
+//   })
+ 
+//     }
+//     addItem(newItem:string){
+//       this.countryData.push(newItem)
+//     }
 }
